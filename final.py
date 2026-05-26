@@ -63,7 +63,7 @@ def index():
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
 
-<title>Chat Tiempo Real</title>
+<title>Chat Tiempo Real - Socket</title>
 
 <style>
 
