@@ -11,13 +11,14 @@ from telegram.ext import (
 import threading
 import requests
 import eventlet
+import os
 
 
 # CONFIGURACION TELEGRAM
 
 
-tokenTelegram = "TU_TOKEN_AQUI"
-chatID = "TU_CHAT_ID_AQUI"
+tokenTelegram = os.getenv.TOKEN_TELEGRAM
+chatID = os.getenv.CHAT_ID
 
 
 eventlet.monkey_patch()
@@ -63,7 +64,7 @@ def index():
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
 
-<title>Chat Tiempo Real - Socket</title>
+<title>Chat Tiempo Real</title>
 
 <style>
 
@@ -237,9 +238,9 @@ function guardarNombre(){
     );
 }
 
-// =====================================
+
 // ENVIAR MENSAJE
-// =====================================
+
 
 function enviar(){
 
@@ -267,9 +268,9 @@ function enviar(){
     mensajeInput.value = "";
 }
 
-// =====================================
+
 // MENSAJES NORMALES
-// =====================================
+
 
 socket.on("message", function(msg){
 
