@@ -17,8 +17,8 @@ import os
 # CONFIGURACION TELEGRAM
 
 
-tokenTelegram = os.getenv.TOKEN_TELEGRAM
-chatID = os.getenv.CHAT_ID
+tokenTelegram = os.getenv("TOKEN_TELEGRAM")
+chatID = os.getenv("CHAT_ID")
 
 
 eventlet.monkey_patch()
